@@ -9,7 +9,7 @@ ARCHIVENAME=$4
 mkdir $BACKUPFOLDER
 
 find $DIRNAME -name "*.$EXTENTION" -exec cp --backup=numbered {} $CURRDIR/$BACKUPFOLDER \;
-tar -czf $ARCHIVENAME.gz --absolute-names $CURRDIR/$BACKUPFOLDER
+tar -czf $ARCHIVENAME --directory=$CURRDIR/$BACKUPFOLDER files
 
 echo "done"
 
