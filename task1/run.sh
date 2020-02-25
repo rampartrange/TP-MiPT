@@ -8,7 +8,7 @@ ARCHIVENAME=$4
 
 mkdir $BACKUPFOLDER
 
-find $DIRNAME -name "*.$EXTENTION" -exec cp --backup=numbered {} ./$BACKUPFOLDER \;
+find $DIRNAME -name "*.$EXTENTION" -exec cp --backup=t {} ./$BACKUPFOLDER \;
 
 tar zcf $ARCHIVENAME ./$BACKUPFOLDER
 
