@@ -1,15 +1,11 @@
 #include "main.h"
 
-void FirstFunction() {
-    std::cout << "I am the first function" << std::endl;
-}
-
-void ThirdFunction() {
-    std::cout << "I am the third function" << std::endl;
+int ThirdFunction() {
+    return 3;
 }
 
 int main() {
-    FirstFunction();
-    SecondFunction();
-    ThirdFunction();
+    std::cout << FirstFunction() << std::endl;
+    std::cout << SecondFunction() << std::endl;
+    std::cout << ThirdFunction() << std::endl;
 }

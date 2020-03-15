@@ -2,4 +2,4 @@
 #include "B/lib.h"
 #include <iostream>
 
-void ThirdFunction();
+int ThirdFunction();

@@ -1,1 +1,1 @@
-void SecondFunction();
+int SecondFunction();
