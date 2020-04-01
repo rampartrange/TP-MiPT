@@ -28,4 +28,4 @@ target_link_libraries(MainLib buffer)
 if (ARM_BUILD)
 	install(TARGETS Main MainLib
 		DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
-endif()s
+endif()
